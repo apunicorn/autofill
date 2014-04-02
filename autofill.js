@@ -16,7 +16,6 @@ $(function(){
                         goodWords.push(potentialWords[ii]);
                     }
                 }
-                //for(var qq=0; qq<goodWords.length; qq++){
                 $.each(goodWords, function(){
                     var goodWord = this;
                             newSpan = $('<span></span>');
@@ -35,7 +34,7 @@ $(function(){
                 kiddo.off('click').click(function(){
                     inputBox.val(kiddo.attr('id'));
                     $('#autoFill').empty();
-                    $('#tastyDiv').html('What a great choice!<br />'+kiddo.attr('id')+' is super tasty.');
+                    $('#tastyDiv').html('What a great choice!<br />'+kiddo.attr('id')+' is super tasty.'); //this can and should be removed for anything but the mexican food
                 });
             });
     });
